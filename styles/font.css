@@ -1,20 +1,14 @@
 @font-face {
     font-family: 'SF Pro Display';
-    src: url('/assets/SF-Pro-f.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+    src: url('/assets/SF-Pro.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'SF Pro H';
-    src: url('/assets/SF-Pro-f.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
+    src: url('/assets/SF-Pro.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'SF Pro P';
-    src: url('/assets/SF-Pro-f.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+    src: url('/assets/SF-Pro.ttf') format('truetype');
 }

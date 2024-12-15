@@ -9,3 +9,11 @@ html{
   background-color: black;
   color: white;
 }
+
+h1{
+  letter-spacing: -15px;
+}
+
+p{
+  letter-spacing: 1px;
+}

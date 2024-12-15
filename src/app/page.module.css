@@ -7,18 +7,23 @@
 }
 
 .heading__h h1{
-    font-size: 25rem;
+    font-size: 27rem;
     vertical-align: middle;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
     font-family: 'SF Pro H', sans-serif;
-    line-height: 0.9;
+    line-height: 0.8;
+
+    width: 1500px;
 
     background: linear-gradient(to right, #FF5C08, #EBD2C5);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: default;
+
+    transform: scaleY(0.8);
+    transform-origin: center;
 }
 
 .heading__b{
@@ -104,10 +109,13 @@
 
 .details div h1{
     font-size: 20rem;
+    font-weight: 600;
+    display: block;
 }
 
 .details__h {
     position: relative;
+    height: 320px;
 }
 
 .details__h h1{
@@ -115,13 +123,22 @@
     transform-origin: top;
     display: inline-block;
     position: relative;
+    line-height: normal;
+    margin-top: 50px;
 }
 
 .details__image{
     position: absolute;
-    left: 52%;
-    top: 47%;
+    left: 50.7%;
+    top: 52%;
     transform: translateY(-50%);
+}
+
+.image__appart {
+  border-radius: 50px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
 }
 
 .details__grid{
@@ -132,10 +149,10 @@
 }
 
 .block__p{
-    font-size: 5.2rem;
+    font-size: 5rem;
     font-weight: 600;
     line-height: 1;
-    width: 890px;
+    width: 900px;
     font-family: 'SF Pro P';
 }
 
@@ -171,19 +188,21 @@
 .application__h{
     display: flex;
     align-items: end;
+}
 
+.application__image{
+    margin-right: auto;
 }
 
 .application__h h1{
     font-size: 20rem;
+    font-weight: 600;
+    display: block;
     line-height: 0.8;
     transform: scaleY(0.8);
     transform-origin: top;
     width: 940px;
-}
-
-.application__image{
-    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .application__block{
@@ -195,16 +214,106 @@
 }
 
 .application__grid{
-    width: 800px;
+    width: 850px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .application__text{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.application__text div p{
+    width: 400px;
+    font-size: 1.4rem;
+    height: 140px;
 }
 
 .application__text div h2{
     font-size: 2rem;
     font-weight: 300;
-    width: 400px;
+    width: 300px;
+    margin-bottom: 10px;
 }
+
+.container{
+    display: flex;
+    width: 1800px;
+    margin: 0 auto;
+}
+
+.functional__block h1{
+    font-size: 20rem;
+    font-weight: 600;
+    display: block;
+    line-height: 0.8;
+    transform: scaleY(0.8);
+    transform-origin: top;
+    width: 940px;
+    margin-top: 50px;
+}
+
+.functional__image{
+    border-radius: 50px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    padding: 30px;
+    width: 700px;
+}
+
+.functional__bg{
+    background: url('/functional-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1800px;
+    height: 700px;
+    position: relative;
+    z-index: -1;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.functional__block2{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    height: 700px;
+    padding: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.block2__union{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.union__h{
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+    transform-origin: center;
+}
+
+.union__p{
+    font-size: 1.7rem;
+    opacity: 0.7;
+    width: 450px;
+}
+
+.union__text{
+    width: 400px;
+    display: grid;
+}
+

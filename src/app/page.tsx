@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 import Header from "../../components/Header";
 import './../../styles/font.css';
 import Form from "../../components/Form";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   return (
@@ -19,9 +20,10 @@ export default function Home() {
             <h1>Л.И.С.А</h1>
             <Image
               src={'/left-icon.svg'}
-              width={287}
-              height={287}
+              width={260}
+              height={260}
               alt=""
+              className={styles.heading__image}
             />
           </div>
           <div className={styles.heading__b}>
@@ -73,9 +75,10 @@ export default function Home() {
             <div className={styles.details__grid}>
               <Image
                 src={'/details-kvar.svg'}
-                width={800}
-                height={590}
+                width={820}
+                height={580}
                 alt=""
+                className={styles.image__appart}
               />
               <div className={styles.grid__block}>
                 <p className={styles.block__p}>Вся аналитика больших данных в невероятно компактном решении</p>
@@ -89,6 +92,78 @@ export default function Home() {
                   />
                   <p className={styles.overlay__text}>Управляй ресурсами эффективно 
                   с нашей систeмой умного мониторинга. Прозрачная аналитика в каждом доме.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.functional}>
+          <div className={styles.container}>
+            <div className={styles.functional__block}>
+              <h1>функционал</h1>
+              <div className={styles.functional__bg}>
+                <div>
+                  <Image 
+                    src={'/functional-image.svg'}
+                    width={700}
+                    height={700}
+                    alt=""
+                    className={styles.functional__image}
+                  />
+                </div>
+                <div className={styles.functional__block2}>
+                  <div className={styles.block2__union}>
+                    <Image 
+                      src={'/union1.svg'}
+                      width={60}
+                      height={60}
+                      alt=""
+                    />
+                    <div className={styles.union__text}>
+                      <h3 className={styles.union__h}>Доступ к камерам</h3>
+                      <p className={styles.union__p}>Следите за безопасностью с любого устройства</p>
+                    </div>
+                  </div>
+                  <div className={styles.block2__union}>
+                    <Image 
+                      src={'/union2.svg'}
+                      width={60}
+                      height={60}
+                      alt=""
+                    />
+                    <div className={styles.union__text}>
+                      <h3 className={styles.union__h}>Простота использования</h3>
+                      <p className={styles.union__p}>Системой удобно пользоваться любому человеку благодаря геймификации</p>
+                    </div>
+                  </div>
+                  <div className={styles.block2__union}>
+                    <Image 
+                      src={'/union3.svg'}
+                      width={60}
+                      height={60}
+                      alt=""
+                      
+                    />
+                    <div className={styles.union__text}>
+                      <h3 className={styles.union__h}>Подсчет эгнергии</h3>
+                      <p className={styles.union__p}>Системой удобно пользоваться любому человеку благодаря геймификации</p>
+                    </div>
+                  </div>
+                  <div className={styles.block2__union}>
+                    <Image 
+                      src={'/union4.svg'}
+                      width={60}
+                      height={60}
+                      alt=""
+                      
+                    />
+                    <div className={styles.union__text}>
+                      <h3 className={styles.union__h}>Безопасность</h3>
+                      <p className={styles.union__p}>Все данные хранящиеся на сервере шифруются</p>
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -120,6 +195,7 @@ export default function Home() {
                       width={400}
                       height={50}
                       alt="vector"
+
                     />
                   </div>
                   <div>
@@ -129,9 +205,10 @@ export default function Home() {
                 <div>
                   <Image 
                     src={'/lisa-grid.svg'}
-                    width={800}
-                    height={500}
+                    width={850}
+                    height={486}
                     alt="vector"
+                    className={styles.application__image}
                   />
                 </div>
               </div>
@@ -139,6 +216,9 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
